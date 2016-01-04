@@ -1,0 +1,51 @@
+<ul class="sidebar-nav">
+
+	<!-- Edit User -->
+	<li class="user">
+		<%= link_to edit_user_registration_path() do %>
+			<% if current_user.avatar_file_name == nil %>
+				<i class="fa fa-user fa-inverse"></i>
+			<% else %>
+				<div class="avatar">
+					<%= image_tag current_user.avatar.url(:thumb)%>
+				</div>
+			<% end %>
+
+			<strong><%= current_user.name %></strong>
+		<% end %>
+		
+	</li>
+
+	<!-- To readed links -->
+	<li>
+		<%= link_to links_path(), :id => 'toReadLinks', :alt => "ReadLater links", :remote => true do%>
+			<i class="fa fa-bookmark fa-inverse"></i>
+			ReadLater links
+		<% end %>
+	</li>
+
+	<!-- Readed links -->
+	<li>
+		<%= link_to links_path(:read => 'true'), :id => 'readedLinks', :alt => "Readed links", :remote => true do %>
+			<i class="fa fa-bookmark-o fa-inverse"></i>
+			Readed links
+		<% end %>
+	</li>
+
+	<!-- Add link -->
+	<li>
+		<%= link_to new_link_path(), :alt => "Add new links", :remote => true do %>
+			<i class="fa fa-plus fa-inverse"></i>
+			Add new link
+		<% end %>
+	</li>
+	
+	<!-- Logout -->
+	<li style="position: absolute; bottom: 0">
+		<%= link_to destroy_user_session_path(), :method => :delete do %>
+			<i class="fa fa-sign-out fa-inverse"></i>
+			Logout
+		<% end %>
+	</li>
+
+</ul>

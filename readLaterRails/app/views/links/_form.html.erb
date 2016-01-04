@@ -1,0 +1,22 @@
+<%= form_for @link, remote: true do |f| %>
+	
+	<div class="form-inputs">
+		<div class="form-group">
+			<%= f.label :name %><br>
+			<%= f.text_field :name, class: "form-control" %>
+		</div>
+		<div class="form-group">
+			<%= f.label :url %><br>
+			<%= f.text_field :url, class: "form-control" %>
+		</div>
+		<div class="form-group">
+			<label>Tags:</label>
+			<%= f.text_field :tag_list, class: "form-control" %>
+		</div>
+		<div class="form-group text-right" style="margin-bottom:0">
+        	<button type="button" class="btn btn-default btn-md" data-dismiss="modal">Close</button>
+			<%= f.submit "Save link", class: "btn btn-primary btn-md" %>
+		</div>
+	</div>
+
+<% end %>

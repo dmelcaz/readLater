@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>readLater</title>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="themev2.css">
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+	<script rel="javascript" src="scripts.js"></script>
+    
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper" class="toggled">
+
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+
+				<li>
+					<a href="#" id="menu-toggle" alt="Toggle Menu">
+						<i class="fa fa-bars fa-inverse"></i>
+						Toggle Menu
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="fa fa-user fa-inverse"></i>
+						<strong>David Melero Cazorla</strong>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" id='toReadLinks' >
+						<i class="fa fa-bookmark fa-inverse"></i>
+						ReadLater Links
+					</a>
+				</li>
+
+				<li>
+					<a href="#" id='readedLinks' >
+						<i class="fa fa-bookmark fa-inverse"></i>
+						Readed Links
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<i class="fa fa-plus fa-inverse"></i>
+						Add Link
+					</a>
+				</li>
+				
+				<li style="position: absolute; bottom: 0px">
+					<a href="#">
+						<i class="fa fa-sign-out fa-inverse"></i>
+						Logout
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+
+		
+		<div id="content-wrapper">
+
+			<!-- Header -->
+			<div id="header">
+				<a href="#">	
+					readLater
+				</a>	
+			</div>
+
+			<!-- Link list -->	
+			<div id="link-list">
+				
+				<!-- Link container-->
+				<div class="link">
+
+					<!-- Link title -->
+					<div class="title">
+
+						<a target="_blank" class="link" id="160" href="https://medium.com/@inaherlihy/how-i-hussled-to-get-the-perfect-job-bd24e74188ae#.a3qasw412">How I Hustled to Get the Perfect Job — Startups, Wanderlust, and Life Hacking — Medium</a>
+
+					</div>
+
+					<!-- Tags -->
+					<div class="tag-list">
+						<strong>Tags:</strong>
+						<a href="#"><span class="tag">Development</span></a>, 
+						<a href="#"><span class="tag">Astronomy</span></a>, 
+						<a href="#"><span class="tag">Machine learning</span></a>
+					</div>
+
+					<!-- Edit and delete links -->
+					<span class="buttons">
+						<a data-remote="true" href="/links/160/edit">Edit</a>
+		 				| <a class="delete-button" data-remote="true" rel="nofollow" data-method="delete" href="/links/160">Delete</a>
+					</span>
+				</div>
+
+				<hr>
+
+		</div>
+</body>
+</html>

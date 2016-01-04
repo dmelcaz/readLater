@@ -1,0 +1,223 @@
+body {
+	background: #fcfcfc;
+	min-height: 100vh;
+  margin: 0;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none !important;
+    color: #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ *	Layout
+ */
+
+#wrapper {
+	position: absolute;
+	width: 100%;
+
+  margin-left: 0px;
+  padding-right: 250px;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 42px
+}
+
+#sidebar-wrapper {
+	z-index: 100;
+	position: fixed;
+	width: 250px;
+	height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+	right: 250px;
+  margin-right: -250px;
+
+	background: #222;
+	border-left: 1px solid #000;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 42px;
+}
+
+#content-wrapper {
+	padding: 0;
+}
+
+#link-list {
+  padding:100px 24px 0;
+}
+
+/*
+ *  Header
+ */
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  
+  font-size:26px;
+  padding:8px 12px; 
+  width:100%; 
+
+  background: #fff;
+  border-bottom: solid 1px #eee;
+}
+
+#header > a {
+  color:#000;
+  font-weight: 500;
+}
+
+/*
+ *	Sidebar
+ */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    
+    width: 249px;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sidebar-nav li {
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.sidebar-nav li > a {
+  font-size: 14px;
+
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.sidebar-nav li > a > i.fa {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+
+  vertical-align: middle;
+  text-align: center;
+
+  margin-right: 10px;
+}
+
+/*
+ *  Link Wrapper
+ */
+
+.link {
+  position: relative;
+  text-align:center;
+  padding: 12px;
+}
+
+/*
+ *  Link title
+ */
+
+.link > .title {
+  margin-bottom: 5px;
+}
+
+a.link {
+  font-size: 26px;
+  color: #337ab6;
+}
+
+a:hover.link {
+  color: #539ad6;
+}
+
+/*
+ *	Edit and delete buttons
+ */
+
+.link .buttons{
+  position: absolute; 
+  bottom: 12px; 
+  right: 0;
+
+  font-size: 12px; 
+
+  opacity: 0;
+}
+
+.link:hover .buttons{
+	opacity: 1
+}
+
+.buttons > a {
+  color: #666;
+}
+
+.buttons > a:hover {
+  color: #888;
+}
+
+/*
+ *  Tags
+ */
+
+.tag-list {
+  font-size: 12px;
+}
+
+.tag {
+  font-weight: normal;
+  color: #666;
+}
+
+.tag:hover {
+  color: #888;
+}
+
+/*
+ *  Horizontal row
+ */
+
+hr {
+  margin: 40px auto;
+  width: 50%; 
+  height:1px; 
+  
+  background: #eee;
+  border: solid 0 #fff;
+}
